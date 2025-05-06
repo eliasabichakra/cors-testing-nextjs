@@ -28,7 +28,7 @@ export default function Home() {
       {data ? (
         <pre>{JSON.stringify(data, null, 2)}</pre>
       ) : (
-        <p>Loading...</p>
+        <p>Loading...</p> 
       )}
     </div>
   )
