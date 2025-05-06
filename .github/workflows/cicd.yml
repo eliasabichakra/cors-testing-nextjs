@@ -26,11 +26,11 @@ jobs:
 
       - name: Build static site
         run: |
-          npx next build
-          npx next export
+          npx next build  # Build the application
+          # No need for next export, it's handled by next build with output: 'export'
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+          github_token: ${{ secrets.TOKEN_GITHUB_CICD }}
+          publish_dir: ./out  # This points to the exported static content
