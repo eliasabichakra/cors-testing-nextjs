@@ -27,7 +27,7 @@ jobs:
       - name: Build static site
         run: |
           npx next build  # Build the application
-          npx next export # Export the static version of the site
+          # No need for next export, it's handled by next build with output: 'export'
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

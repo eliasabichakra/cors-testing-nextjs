@@ -8,10 +8,17 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
+    console.log('Fetching from API...')
     axios
       .get('https://explorerbe.pwrlabs.io/explorerInfo/')
-      .then(response => setData(response.data))
-      .catch(err => setError(err.message))
+      .then(response => {
+        console.log('API response:', response.data)
+        setData(response.data)
+      })
+      .catch(err => {
+        console.error('API error:', err)
+        setError(err.message)
+      })
   }, [])
 
   return (
