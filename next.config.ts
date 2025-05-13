@@ -5,5 +5,5 @@ const nextConfig: NextConfig = {
   basePath: '/cors-testing-nextjs', // Subpath for routing
   assetPrefix: '/cors-testing-nextjs', // Correctly prefix static assets
 };
-
+ 
 export default nextConfig;
