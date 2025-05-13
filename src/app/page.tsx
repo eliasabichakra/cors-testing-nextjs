@@ -12,6 +12,13 @@ export default function Home() {
   const [fileName, setFileName] = useState<string>('')
 
   // File selection handler
+  //new
+  // DO801F2LAVFV32YQJ3WG
+  // LpaLSnl4HcKobjtsy+2Tl9wmyH3Oi8sL7MNtIcIDrPM
+
+  //old
+  // DO00TH6WGBAHN67G7QMJ
+  // 0ud3fioyrjwi6mXXFoyNdWDiIuY0/lv7B6SDB9AN9ak
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0] || null
     setFile(selectedFile)
@@ -29,8 +36,8 @@ export default function Home() {
       region: 'ams3',  // Correct region for Amsterdam
       endpoint: 'https://ams3.digitaloceanspaces.com',  // Correct endpoint without bucket name
       credentials: {
-        accessKeyId: 'DO00TH6WGBAHN67G7QMJ',  // Your access key
-        secretAccessKey: '0ud3fioyrjwi6mXXFoyNdWDiIuY0/lv7B6SDB9AN9ak',  // Your secret key
+        accessKeyId: 'DO801F2LAVFV32YQJ3WG',  // Your access key
+        secretAccessKey: 'LpaLSnl4HcKobjtsy+2Tl9wmyH3Oi8sL7MNtIcIDrPM',  // Your secret key
       },
     })
 
